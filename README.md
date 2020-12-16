@@ -34,4 +34,4 @@ Step 7: Now that the topology set up and we can run our send and receive files, 
 
 This section explains how our topology was created and what our code is doing. 
 
-Our code was written with the intention of providing a better way of allocating bandwidth -- one that's dependant on the applications people in the home are using.
+Our code was written with the intention of providing a better way of allocating bandwidth, one that's dependant on the applications people in the home are using.
