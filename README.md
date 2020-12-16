@@ -30,3 +30,5 @@ Step 7: Now that the topology set up and we can run our send and receive files, 
   - The command 'python send_sluice4.py 10.0.0.2 1234 5' does the same as above, except app_type 5 is Hulu. Host 2 forwards this to h7, and the same steps are repeated. 
   
 ## Methodology
+
+This section explains how our topology was created and what our code is doing.
