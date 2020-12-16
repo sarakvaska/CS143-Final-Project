@@ -25,8 +25,8 @@ Step 2: Once the environment is set up, open a terminal and run: ssh -X [user]@[
 Step 7: Now that the topology set up and we can run our send and receive files, we can run the commands by different app type.
   - The command 'python send_sluice4.py 10.0.0.2 1234 1' sends app_type 1 (which is Zoom), to h2. Host 2 then forwards this to h3, which prints out the app type it receives, the host address it received it from, and the app type name. It sends an application type 'User App' back to h1 once this information is received from h2.
   - The command 'python send_sluice4.py 10.0.0.2 1234 2' sends app_type 2 (which is Skype), to h2. Host 2 then forwards this to h4, which (as above) prints out the information its received, and sends an application 'User App' back to h1.
-  - The command 'python send_sluice4.py 10.0.0.2 1234 3' does the same as above, except app_type 3 is Email. Host 2 forwards this to h5, and the same steps as above are repeated.
-  - The command 'python send_sluice4.py 10.0.0.2 1234 4' does the same as above, except app_type 4 is Netflix. Host 2 forwards this to h6, and the same steps as above are repeated.. 
-  - The command 'python send_sluice4.py 10.0.0.2 1234 5' does the same as above, except app_type 5 is Hulu. Host 2 forwards this to h7, and the same steps as above are repeated. 
+  - The command 'python send_sluice4.py 10.0.0.2 1234 3' does the same as above, except app_type 3 is Email. Host 2 forwards this to h5, and the same steps are repeated.
+  - The command 'python send_sluice4.py 10.0.0.2 1234 4' does the same as above, except app_type 4 is Netflix. Host 2 forwards this to h6, and the same steps are repeated.
+  - The command 'python send_sluice4.py 10.0.0.2 1234 5' does the same as above, except app_type 5 is Hulu. Host 2 forwards this to h7, and the same steps are repeated. 
   
 ## Methodology
