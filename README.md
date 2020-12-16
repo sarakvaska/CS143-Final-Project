@@ -1,2 +1,2 @@
-# CS143-Final-Project
+# CS143 Final Project
 Bandwidth Allocation in the Home via Zoom
