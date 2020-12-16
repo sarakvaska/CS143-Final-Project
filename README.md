@@ -1,6 +1,8 @@
 # Bandwidth Allocation in the Home via Zoom
 CS143 Final Project by Sara Kvaska, Serena Davis, Gustavo Coutinho and Jenna Moustafa
 
+## Read our Final Report here: 
+
 ## How to Run Our Code
 Step 1: Set up the mininet environment and ensure that you can connect from the host PC to the guest VM via SSH.
 
