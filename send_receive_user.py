@@ -10,13 +10,7 @@ import readline
 import numpy as np
 import time
 
-# from scapy.all import sendp, send, srp1, get_if_list, get_if_hwaddr
-# from scapy.all import Packet, hexdump
-# from scapy.all import Ether, IP, UDP, ShortField, StrFixedLenField, XByteField, IntField
-# from scapy.all import bind_layers
-# from scapy.config import conf
-
-DPORT = 1235 # MY_PORT 0x04d2
+DPORT = 1235
 app_type_to_name = {0: 'User App', 1: 'Zoom', 2: 'Skype', 3: 'Email', 4: 'Netflix', 5: 'Hulu'}
 
 def main():
