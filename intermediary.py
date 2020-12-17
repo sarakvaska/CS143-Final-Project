@@ -20,15 +20,17 @@ app_type_to_host = {0: '10.0.0.1', 1: '10.0.0.3', 2: '10.0.0.4', 3: '10.0.0.5', 
 
 def main():
      while True:
+          
+         # Receive incoming packets
          s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
          s.bind(('', PORT))
          data, clientAddress = s.recvfrom(200)
          app_type, = struct.unpack('>I', data)
-
          print "App Type: ", str(app_type), "Host Address: ",  str(clientAddress), "App Type Name: ", str( app_type_to_name[app_type])
-
+         
+         # Forward incoming packets accordingly (representing intermediary forwarding packets between user/application)
          if(app_type != 0):
-             time_delay = 1/app_type_to_upload_bandwidth[app_type]*(app_type_to_priority[app_type]**2)
+             time_delay = 1 / app_type_to_upload_bandwidth[app_type]* (app_type_to_priority[app_type]**2)
              time.sleep(time_delay)
          data1 = struct.pack('>I', app_type)
          s.sendto(data1, (app_type_to_host[app_type], PORT))
