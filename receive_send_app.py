@@ -8,10 +8,6 @@ import time
 DPORT = 1235
 srcPort = 1234
 
-# dict where keys are port numbers, values are priorities (priority 1 = highest)
-# zoom, skype, email, netflix, hulu
-# zoom, skype, and email: high priorty, netflix and hulu: low priority
-# host 2 is our middle host which is determining where to send traffic
 app_type_to_download = {1: 1000, 2: 4000, 3: 10, 4: 3000, 5: 3000}
 app_type_to_priority = {1: 1, 2: 1, 3: 2, 4: 3, 5: 3}
 app_type_to_name = {0: 'User App', 1: 'Zoom', 2: 'Skype', 3: 'Email', 4: 'Netflix', 5: 'Hulu'}
