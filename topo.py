@@ -2,8 +2,7 @@ from mininet.topo import Topo
 
 class ourTopo(Topo):
     def __init__(self, **opts):
-        #If you pass in dictionary with multiple keys ... kwargs
-        ''' Initialize topology and default options '''
+        
         Topo.__init__(self, **opts)
 
         # add hosts
@@ -24,7 +23,7 @@ class ourTopo(Topo):
         switch6 = self.addSwitch("s6")
         switch7 = self.addSwitch("s7")
 
-        # add links between host and switch
+        # add links between hosts and respective switches
         self.addLink(host1, switch1)
         self.addLink(host2, switch2)
         self.addLink(host3, switch3)
