@@ -22,13 +22,13 @@ def main():
         s.bind(('', DPORT))
         data, clientAddress = s.recvfrom(200)
         app_type, = struct.unpack('>I', data)
-        print str("App Type: ", app_type), str("Host Address: ", clientAddress), str("App Type Name: ", app_type_to_name[app_type])
+        print "App Type:", str(app_type), "Host Address:", str(clientAddress), "App Type Name:", app_type_to_name[app_type]
 
         s1 = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         s1.bind(('', srcPort))
         data1 = struct.pack('>I', 0)
         # have dictionary that maps app type with host
-        time_delay = 1/app_type_to_upload[app_type]*app_type_to_priority[app_type]
+        time_delay = 1/app_type_to_download[app_type]*(app_type_to_priority[app_type]**2)
         time.sleep(time_delay)
         s1.sendto(data1, ('10.0.0.2', DPORT))
 

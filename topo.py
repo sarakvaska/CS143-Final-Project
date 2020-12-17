@@ -24,10 +24,6 @@ class ourTopo(Topo):
         switch6 = self.addSwitch("s6")
         switch7 = self.addSwitch("s7")
 
-        # # add links between hosts
-        # self.addLink(host1, host2, delay = "0ms")
-        # self.addLink(host2, host3, delay = "0ms")
-
         # add links between host and switch
         self.addLink(host1, switch1)
         self.addLink(host2, switch2)
