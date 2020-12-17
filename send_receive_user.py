@@ -22,10 +22,8 @@ def main():
     addr = socket.gethostbyname(sys.argv[1])
     srcPort = int(sys.argv[2])
     app_type = int(sys.argv[3])
-
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
     s.bind(('', srcPort))
-    # app_type = application type (zoom, skype, email, netflix, hulu)
     data = struct.pack('>I', app_type)
     s.sendto(data, (addr, DPORT))
 
