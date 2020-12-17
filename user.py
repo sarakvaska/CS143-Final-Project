@@ -15,11 +15,11 @@ app_type_to_name = {0: 'User App', 1: 'Zoom', 2: 'Skype', 3: 'Email', 4: 'Netfli
 
 def main():
 
-    if len(sys.argv)<3:
-        print 'pass 2 arguments: <destination IP> <app_type>'
+    if len(sys.argv)<2:
+        print 'pass 1 argument: <app_type>'
         exit(1)
 
-    addr = socket.gethostbyname(sys.argv[1])
+    addr = socket.gethostbyname(10.0.0.2)
     app_type = int(sys.argv[2])
 
     # Send packet to application through intermediary (representing user uploading to app)
