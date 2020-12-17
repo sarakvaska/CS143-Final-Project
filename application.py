@@ -6,7 +6,7 @@ import time
 
 PORT = 1234
 
-# Dictionary linking app type code to required download bandwidth for quality service (Kbps)
+# Dictionary linking app type code to required user download bandwidth for quality service (Kbps)
 app_type_to_download = {1: 1000, 2: 4000, 3: 10, 4: 3000, 5: 3000}
 
 # Dictionary linking app type code to priority, with highest priority being 1 and lowest priority being 3
