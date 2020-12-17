@@ -6,13 +6,13 @@ class ourTopo(Topo):
         Topo.__init__(self, **opts)
 
         # add hosts
-        host1 = self.addHost("User")
-        host2 = self.addHost("Intermediary")
-        host3 = self.addHost("Zoom")
-        host4 = self.addHost("Skype")
-        host5 = self.addHost("Email")
-        host6 = self.addHost("Netflix")
-        host7 = self.addHost("Hulu")
+        host1 = self.addHost("h1")
+        host2 = self.addHost("h2")
+        host3 = self.addHost("h3")
+        host4 = self.addHost("h4")
+        host5 = self.addHost("h5")
+        host6 = self.addHost("h6")
+        host7 = self.addHost("h7")
 
         # add switches
         switch1 = self.addSwitch("s1")
