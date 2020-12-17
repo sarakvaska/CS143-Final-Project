@@ -19,7 +19,7 @@ def main():
         print 'pass 1 argument: <app_type>'
         exit(1)
 
-    addr = socket.gethostbyname(10.0.0.2)
+    addr = socket.gethostbyname('10.0.0.2')
     app_type = int(sys.argv[2])
 
     # Send packet to application through intermediary (representing user uploading to app)
