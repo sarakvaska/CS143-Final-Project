@@ -42,4 +42,4 @@ To replicate upload/download speed, we created our topology and the send/receive
 
 Lastly, our formula for assigning delay times is: 1 / app_type_to_bandwidth[app_type] * app_type_to_priority[app_type]^2. Our app_type_to_priority dictionary is where we assign priority by application type. Zoom and Skype have the highest priority (1), Email is lower priority (2), and Netflix and Hulu are lowest priority (3). Our formula then determines delay time based on the bandwidth required per application type multiplied by application priority^2. We square the application priority while keeping the relationship between delay and bandwidth required inversely linear, because we deemed the "priority" of the application (e.g. the relative importance to the user) to be a more important factor than the bandwidth recommendations provided by these applications.
 
-## Read our Final Report
+## [Read Our Final Report (linked here)](https://github.com/sarakvaska/CS143-Final-Project/blob/master/CS143_Final_Report.pdf)
