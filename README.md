@@ -12,7 +12,7 @@ Step 2: Once the environment is set up, open a terminal and run: ssh -X [user]@[
  Step 3: Start up an X terminal using '$ xterm' and a new terminal window should appear. 
   - If you get a 'xterm: DISPLAY is not set error', try running ssh -Y [user]@[Guest IP Here] instead of using -X.
   
- Step 4: Inside the xterm terminal, cd into '~/pox/pox/misc' directory, then run the command 'sudo fuser -k 6633/tcp'. This is to kill any controllers still running on the system. (When first running this there should not be, but just in case.)
+ Step 4: Inside the xterm terminal, cd into '~/pox/pox/misc' directory, then run the command 'sudo fuser -k 6633/tcp'. This is to kill any controllers still running on the system. (When first running this command, there should not be any controllers running but we'll run the command just in case.)
   - Then, run 'sudo mn -c' to cleanup the configuration. We want to cleanup before running the topology. 
   
  Step 5: After completing steps 1-4 above, we are ready to run our topology. Make sure the topo.py file is inside the ~/pox/pox/misc directory, then run the command 'sudo mn --custom topo.py --topo custom'. A topology of 7 hosts, 7 switches, and 1 controller should be created, and the CLI should be started. 
