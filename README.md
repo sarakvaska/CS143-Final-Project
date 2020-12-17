@@ -1,8 +1,6 @@
 # Bandwidth Allocation in the Home via Zoom
 CS143 Final Project by Sara Kvaska, Serena Davis, Gustavo Coutinho and Jenna Moustafa
 
-## Read our Final Report
-
 ## How to Run Our Code
 Step 1: Set up the mininet environment and ensure that you can connect from the host PC to the guest VM via SSH.
 
@@ -43,3 +41,5 @@ To get started, we created a topology consisting of 7 hosts, 7 switches, and 1 c
 To replicate upload/download speed, we created our topology and the send/receive files such that they run both ways. h1 going to h2 and h2 going to its destination is upload speed, and the destination host going back to h2 and then back to h1 is download speed. In our receive_sluice_back1.py file, we created a dictionary called 'app_type_to_download'. As in the bandwidth dictionary, this assigns delay times based on the download speeds required listed on the application websites. 
 
 Lastly, our formula for assigning delay times is: 1/app_type_to_bandwidth[app_type] * app_type_to_priority[app_type]. Our app_type_to_priority dictionary is where we assign priority by application type. Zoom and Skype have the highest priority (1), Email is lower priorty (2), and Netflix and Hulu are lowest priority (3). Our formula then determines delay time based on the bandwidth required per application type multiplied by application priority^2. Because we determined that the application priority is more important, we square this value to ensure that application types with higher priority get sent quicker than those with lower priority.
+
+## Read our Final Report
