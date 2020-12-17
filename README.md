@@ -1,4 +1,4 @@
-# Bandwidth Allocation in the Home via Zoom
+# An Algorithm in Pursuit of Network Fairness: Bandwidth Allocation at Home in a Zoom World
 CS143 Final Project by Sara Kvaska, Serena Davis, Gustavo Coutinho and Jenna Moustafa
 
 ## How to Run Our Code
