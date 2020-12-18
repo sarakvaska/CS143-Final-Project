@@ -18,9 +18,7 @@ Step 2: Once the environment is set up, open a terminal and run: ssh -X [user]@[
  Step 5: After completing steps 1-4 above, we are ready to run our topology. Make sure the topo.py file is inside the ~/pox/pox/misc directory, then run the command 'sudo mn --custom topo.py --topo custom'. A topology of 7 hosts, 7 switches, and 1 controller should be created, and the CLI should be started. 
  
  Step 6: Run the command 'xterm h1 h2 h3 h4 h5 h6 h7'. This will open separate terminals for all 7 hosts. 
-  - Inside the 'Node: h1' terminal, run 'python user.py 1'. This will run the user.py file, and takes in 3 arguments: 
-  d
-  nation IP, scrPort and app_type. Our destination IP is always 10.0.0.2, because host 2 will send the packets to their intended host (hosts 3 through 7, depending on the app type). Our srcPort is always 1234, and the app_type argument is a number ranging from 1 through 5. 
+  - Inside the 'Node: h1' terminal, run 'python user.py 1'. This will run the user.py file, and takes in 1 argument: app_type. Our destination IP is always 10.0.0.2, because host 2 will send the packets to their intended host (hosts 3 through 7, depending on the app type). Our srcPort is always 1234, and the app_type argument is a number ranging from 1 through 5. 
   - Inside the 'Node: h2' terminal, run 'python intermediary.py'.  
   - Inside the 'Node: h3', 'Node: h4', 'Node: h5', 'Node: h6', and 'Node: h7' terminals, run 'python application.py'. 
 
